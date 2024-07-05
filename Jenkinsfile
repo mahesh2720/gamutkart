@@ -32,7 +32,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'scp /root/.jenkins/workspace/clone/target/gamutkart.war root@172.31.33.103:/root/apache-tomcat-9.0.90/webapps'
+		sh 'scp /root/.jenkins/workspace/clone/target/gamutkart.war root@172.31.46.95:/root/apache-tomcat-9.0.90/webapps'
 	}
     }
 }
